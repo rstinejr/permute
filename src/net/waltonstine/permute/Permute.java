@@ -1,4 +1,4 @@
-package net.waltonstine.prep.permute;
+package net.waltonstine.permute;
 
 import java.util.Arrays;
 import java.util.Random;
