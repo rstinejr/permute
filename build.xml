@@ -1,0 +1,19 @@
+<project name="Graph" default="compile" basedir=".">
+
+<target name="init">
+    <mkdir dir="class"/>
+</target>
+
+<target name="compile" depends="init">
+    <javac srcdir="src" destdir="class" includeantruntime="falase" debug="true"/>
+</target>
+
+<target name="clean">
+    <delete dir="class"/>
+</target>
+
+<target name="run" depends="compile">
+    <java classpath="class" classname="net.waltonstine.prep.permute.Permute"/>
+</target>
+
+</project>
